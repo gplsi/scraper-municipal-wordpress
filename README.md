@@ -39,10 +39,10 @@ Por defecto usa `chromium` headless y los delays configurados (`DELAY_BETWEEN_PA
 ## 🧠 Flujo del script
 1) Itera cada `site` de la lista (`domain`, `languages` con path).  
 2) Para cada idioma:
-   - Pagina con scroll hasta cargar todos los enlaces (`div.grupo-texto a`).  
+   - Página con scroll hasta cargar todos los enlaces (`div.grupo-texto a`).  
    - Acumula enlaces de noticias; si una página no devuelve resultados, termina la paginación.  
 3) Para cada noticia:
-   - Visita la URL, extrae `title`, `subtitle`, `date`, `content` (párrafos), y HTML principal (`.node__content`/`.field-name-field-cuerpo`).  
+   - Visita la URL, extrae `title`, `subtitle`, `date`, `content` (párrafos) y HTML principal (`.node__content`/`.field-name-field-cuerpo`).  
    - Genera slug desde el título (sin acentos, 4 palabras máx., sufijo numérico).  
    - Guarda HTML completo, TXT y MD en carpetas por idioma/fecha.  
    - Actualiza índices: por idioma y global, con rutas relativas y metadatos.  
@@ -53,11 +53,31 @@ Por defecto usa `chromium` headless y los delays configurados (`DELAY_BETWEEN_PA
 - Delays: `DELAY_BETWEEN_PAGES` (ms), `DELAY_BETWEEN_ARTICLES` (ms).
 - Timeouts de navegación: 40s por página/noticia; scroll con esperas de 5s.
 
+## 📚 Referencia
+Por favor, cita este conjunto de datos con el siguiente BibTeX:
+```
+@misc{scraper-municipal-wordpress,
+  author       = {García Cerdá, Raúl and Mu{\~n}oz Guillena, Rafael},
+  title        = {MUNICIPAL_SCRAP_WRD Scraper}, 
+  year         = {2025},
+  institution  = {Language and Information Systems Group (GPLSI) and Centro de Inteligencia Digital (CENID), University of Alicante (UA)},
+  howpublished = {\url{(https://github.com/gplsi/scraper-municipal-wordpress)}}
+}
+```
+
 ## 💰 Financiación
-- (pendiente)
+Este recurso está financiado por el Ministerio para la Transformación Digital y de la Función Pública — Financiado por la UE – NextGenerationEU, en el marco del proyecto Desarrollo de Modelos ALIA.
 
 ## 🙏 Agradecimientos
-- (pendiente)
+Expresamos nuestro agradecimiento a todas las personas e instituciones que han contribuido al desarrollo de este recurso.
+
+Agradecimientos especiales a:
+
+[Proveedores de datos]
+
+[Proveedores de soporte tecnológico]
+
+Asimismo, reconocemos las contribuciones financieras, científicas y técnicas del Ministerio para la Transformación Digital y de la Función Pública – Financiado por la UE – NextGenerationEU dentro del marco del proyecto Desarrollo de Modelos ALIA.
 
 ## ⚠️ Aviso legal
 Tenga en cuenta que los datos pueden contener sesgos u otras distorsiones no deseadas. Cuando terceros desplieguen sistemas o presten servicios basados en estos datos, o los utilicen directamente, serán responsables de mitigar los riesgos asociados y de garantizar el cumplimiento de la normativa aplicable, incluida aquella relacionada con el uso de la Inteligencia Artificial.
