@@ -57,7 +57,7 @@ Por defecto usa `chromium` headless y los delays configurados (`DELAY_BETWEEN_PA
 Por favor, cita este conjunto de datos con el siguiente BibTeX:
 ```
 @misc{scraper-municipal-wordpress,
-  author       = {García Cerdá, Raúl and Mu{\~n}oz Guillena, Rafael},
+  author       = {Garc\'ia Cerd\'a, Ra\'ul and Mu{\~n}oz Guillena, Rafael},
   title        = {MUNICIPAL_SCRAP_WRD Scraper}, 
   year         = {2025},
   institution  = {Language and Information Systems Group (GPLSI) and Centro de Inteligencia Digital (CENID), University of Alicante (UA)},
